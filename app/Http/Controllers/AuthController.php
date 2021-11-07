@@ -53,7 +53,7 @@ class AuthController extends Controller
 
     public function logout(Request $request)
     {
-        return $request;
+        return $request;//TODO
     }
 
     public function user(Request $request)
