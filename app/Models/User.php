@@ -41,4 +41,15 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+
+    public function devices()
+    {
+        return $this->hasMany(Device::class);
+    }
+
+    public function otp()
+    {
+        return $this->hasOne(Otp::class);
+    }
 }
